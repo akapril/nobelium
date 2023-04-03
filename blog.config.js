@@ -3,7 +3,7 @@ const BLOG = {
   author: 'Akapril',
   email: 'deathswaltz@hotmail.com',
   link: 'https://akapril.vercel.app',
-  description: 'This gonna be an awesome website.',
+  description: '记录.',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'auto', // ['light', 'dark', 'auto'],
@@ -18,7 +18,7 @@ const BLOG = {
   showArchive: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
-  socialLink: 'https://twitter.com/craigaryhart',
+  socialLink: 'https://twitter.com/deathswaltz',
   seo: {
     keywords: ['Blog', 'Website', 'Notion','akapril'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
