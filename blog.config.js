@@ -20,7 +20,7 @@ const BLOG = {
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: 'https://twitter.com/deathswaltz',
   seo: {
-    keywords: ['Blog', 'Website', 'Notion','akapril'],
+    keywords: ['Blog', 'Website', 'Notion','akapril','java','docker','loki','spring','wails','go','linux','elasticsearch','docker'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
@@ -33,7 +33,7 @@ const BLOG = {
       domainId: '' // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
     },
     gaConfig: {
-      measurementId: '' // e.g: G-XXXXXXXXXX
+      measurementId: 'GTM-532VR33G' // e.g: G-XXXXXXXXXX
     }
   },
   comment: {
