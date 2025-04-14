@@ -1,11 +1,20 @@
 import { useConfig } from '@/lib/config'
 import Vercel from '@/components/Vercel'
+import { useEffect, useState } from 'react'
 const Footer = ({ fullWidth }) => {
   const BLOG = useConfig()
+  const [showICP, setShowICP] = useState(false)
 
   const d = new Date()
   const y = d.getFullYear()
   const from = +BLOG.since
+   // 只在客户端运行
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setShowICP(window.location.hostname.includes('akapril.cn'))
+    }
+  }, [])
+  
   return (
     <div
       className={`mt-6 flex-shrink-0 m-auto w-full text-gray-500 dark:text-gray-400 transition-all ${
@@ -16,7 +25,7 @@ const Footer = ({ fullWidth }) => {
       <div className="my-4 text-sm leading-6">
         <div className="flex align-baseline justify-between flex-wrap">
           <p>
-             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`}  {window.location.hostname.includes('akapril.cn') && (
+             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`}   {showICP && (
               <>
                 {' | '}
                 <a
