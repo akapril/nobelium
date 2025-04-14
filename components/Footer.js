@@ -16,7 +16,7 @@ const Footer = ({ fullWidth }) => {
       <div className="my-4 text-sm leading-6">
         <div className="flex align-baseline justify-between flex-wrap">
           <p>
-             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`} <a href="https://beian.miit.gov.cn">{BLOG.authNo}</a>
+             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`} {window.location.hostname.includes('akapril.cn')?| <a href="https://beian.miit.gov.cn">{BLOG.authNo}</a>:""}
           </p>
         </div>
       </div>
