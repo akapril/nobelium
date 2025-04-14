@@ -1,6 +1,7 @@
 const BLOG = {
   title: 'Akapril',
   author: 'Akapril',
+  authNo: '<a href="https://beian.miit.gov.cn">鲁ICP备2024070845号-2</a>',
   email: 'deathswaltz@hotmail.com',
   link: 'https://akapril.vercel.app',
   description: '记录.',
