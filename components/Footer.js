@@ -18,7 +18,6 @@ const Footer = ({ fullWidth }) => {
           <p>
              © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`} <a href="https://beian.miit.gov.cn">{BLOG.authNo}</a>
           </p>
-          // <Vercel />
         </div>
       </div>
     </div>
